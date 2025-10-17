@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
     <title>Vite App</title>
     <link rel="manifest" href="/manifest.json"/>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/db.js"></script>
   </head>
-  <body>
-    <div id="app">
+  <body class="fullscreen">
+    <div class="container">
       <h1>Rubens</h1>
+       <div style="text-align: center;">
+      <input type="text" placeholder="nome" id="nome"/>
+      <input type="number" placeholder="idade" id="idade"/>
+      </div>
+      <div style="text-align: center;">
+        <button id="btnSalvar">salvar</button>
+        <button id="btnListar">Listar</button>
+      </div>
+      <div>
+        <output></output>
+      </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
+
   </body>
 </html>
