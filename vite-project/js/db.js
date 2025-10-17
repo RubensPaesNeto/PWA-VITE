@@ -58,7 +58,7 @@ async function createDB() {
         const store = tx.objectStore('pessoas');
         const value = await store.getAll();
         if(value){
-            showResult(value.map(mostrarTabela).join(''))
+            showResult(value.map(mostrarTabela))
         } else{
             showResult("Não há nenhum dado no banco!")
         }
